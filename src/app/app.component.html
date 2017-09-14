@@ -1,21 +1,8 @@
-<!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <h1>
-    Welcome to {{title}}!!!!
+    {{title}}!!!!
   </h1>
+  <h2>{{subTitle}}</h2>
 </div>
 
-<div>
-  <h2>The Coon and Friends</h2>
-  <ul class="heroes">
-    <li *ngFor="let hero of heroes"
-        (click)="onSelect(hero)"
-        [class.selected]="hero === selectedHero" >
-      <span class="badge">{{hero.id}}</span> {{hero.name}}
-    </li>
-  </ul>
-
-  <hero-detail [hero]="selectedHero"></hero-detail>
-
-</div>
-
+<app-heroes></app-heroes>

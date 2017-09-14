@@ -1,9 +1,9 @@
 import { Component, Input } from '@angular/core';
-import { Hero} from './hero';
+import { Hero} from './shared/hero';
 
 @Component({
-  selector: 'hero-detail',
-  templateUrl: 'hero-detail.component.html'
+  selector: 'app-hero-detail',
+  templateUrl: './hero-detail.component.html'
 })
 
 export class HeroDetailComponent {
