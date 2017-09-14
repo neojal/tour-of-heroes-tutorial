@@ -8,6 +8,11 @@
     </li>
   </ul>
 
-  <app-hero-detail [hero]="selectedHero"></app-hero-detail>
+  <div *ngIf="selectedHero" >
+    <h2>
+      {{selectedHero.name | uppercase}} is the shit!
+    </h2>
+    <button (click)="gotoDetail()" >Go to detail</button>
+  </div>
 
 </div>
